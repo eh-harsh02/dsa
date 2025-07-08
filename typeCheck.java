@@ -12,5 +12,6 @@ public class typeCheck{
         }else{
             System.out.println("Uppercase");
         }
+        
     }
 }

@@ -3,12 +3,10 @@ public class checkPrime {
 
     public static boolean isPrime(int n){
         if(n<=1) return false;
-        int count = 2;
-        while(count*count<=n){
-            if(n%count==0) return false;
-            count++;
+        for(int i=2; i<=Math.sqrt(n); i++){
+            if(n%i==0) return false;
         }
-        return count*count >n;
+        return true;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
