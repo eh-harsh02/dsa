@@ -52,31 +52,31 @@ public class Solution {
     //     scn.close();
     // }
 
-    public static String counterGame(int n){
-        int count=0;
-        while(n>1){
-            if((n & (n-1)) == 0){
-                n=n/2;
-            }else{
-                int nextLowerNum = Integer.highestOneBit(n);
-                n = n-nextLowerNum;
-            }
-            count++;
-        }
-        if(count%2==0) return "Richard";
-        return "Louise";
-    }
+//     public static String counterGame(int n){
+//         int count=0;
+//         while(n>1){
+//             if((n & (n-1)) == 0){
+//                 n=n/2;
+//             }else{
+//                 int nextLowerNum = Integer.highestOneBit(n);
+//                 n = n-nextLowerNum;
+//             }
+//             count++;
+//         }
+//         if(count%2==0) return "Richard";
+//         return "Louise";
+//     }
     
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-        for(int i=0; i<t; i++){
-            int n = sc.nextInt();
-            String output = counterGame(n);
-            System.out.println(output);
-        }
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         int t = sc.nextInt();
+//         for(int i=0; i<t; i++){
+//             int n = sc.nextInt();
+//             String output = counterGame(n);
+//             System.out.println(output);
+//         }
+// }
 
 
-}
 }
 
