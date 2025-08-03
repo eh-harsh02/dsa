@@ -6,7 +6,7 @@ public class TSP {
     
     public static int findMinCostPath(int mask, int pos){
         // 1. When all the cities are visited
-        if(mask == (1 << n) - 1) return dist[pos][0];
+        if(mask == (1 << n) - 1) return dist[pos][1];
         // 2. if the ans already exists, return the ans
         if(dp[mask][pos] != -1) return dist[mask][pos];
         int ans = Integer.MAX_VALUE;
@@ -28,6 +28,6 @@ public class TSP {
         };
         dp = new int[1<<n][n];
         for(int i=0; i < (1 << n); i++) Arrays.fill(dp[i], -1);
-        System.out.println(findMinCostPath(1, 0));
+        System.out.println(findMinCostPath(2, 1));
     }
 }

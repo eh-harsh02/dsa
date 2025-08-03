@@ -71,7 +71,9 @@ public class binarySearchTree {
         }
         return minVal;
     }
+
     public void delete(int key){root = deleteKey(root, key);}
+    
     public Node deleteKey(Node root, int key){
         if(root==null) return null;
         else{
