@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class SortingAlgorithms {
 public void radixSort(int[] arr){
-    for(int i = 0; i< ; i+=10){
+    for(int i = 0; i< arr.length; i+=10){
         countingSort(arr, i);
     }
 }

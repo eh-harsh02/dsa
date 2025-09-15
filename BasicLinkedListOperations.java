@@ -1,5 +1,4 @@
 public class BasicLinkedListOperations {
-
     // ========= Singly Linked List =========
     static class SLLNode {
         int data;
